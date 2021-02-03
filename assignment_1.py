@@ -208,7 +208,7 @@ def main():
     for _ in range(6):
         # Confused by the colons? Check out the NumPy docs on indexing:
         # https://docs.scipy.org/doc/numpy/reference/arrays.indexing.html
-        ax[n].imshow(data[:, :, slice_], 'gray')
+        ax[n].imshow(data[2:, 6:, slice_5], 'gray')
         ax[n].set_xticks([])
         ax[n].set_yticks([])
         ax[n].set_title('Slice number: {}'.format(slice_), color='C0')
