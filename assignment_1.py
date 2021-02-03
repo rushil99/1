@@ -213,7 +213,7 @@ def main():
         ax[n].set_yticks([])
         ax[n].set_title('Slice number: {}'.format(slice_), color='C0')
         n += 1
-        slice_ += 10
+        slice_ += 12
 
     # Why tight_layout?
     # A reason why: https://stackoverflow.com/questions/9603230/
@@ -311,6 +311,7 @@ def main():
     # TODO: Add a fitting title to the plot
     # *=======================================*
     # <Your code here>
+    plt.title('Time vs Signal Strength')
     ax.tick_params(labelsize=12)
 
     fig.tight_layout()
@@ -318,6 +319,7 @@ def main():
     # TODO: Show the third plot
     # *=======================================*
     # <Your code here>
+
 
     # *=======================================*
     # TODO: Write code to plot a histogram of
@@ -327,6 +329,11 @@ def main():
     # LABEL your axes!!!
     # *=======================================*
     # <Your code here>
+    plt.hist(vowel_data)
+    plt.xlabel("Time")
+    plt.ylabel("Signal Strength")
+    plt.title("Signal Strenght Histogram")
+    plt.show()
 
 
 # Helper function
