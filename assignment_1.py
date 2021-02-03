@@ -319,7 +319,7 @@ def main():
     # TODO: Show the third plot
     # *=======================================*
     # <Your code here>
-
+    plt.show()
 
     # *=======================================*
     # TODO: Write code to plot a histogram of
